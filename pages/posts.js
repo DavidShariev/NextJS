@@ -1,16 +1,17 @@
 import Link from "next/link";
+import s from "./post.module.scss";
 
 function Posts(props) {
   const posts = props.posts;
 
   return (
-    <div>
+    <div className={s.post}>
       <h1>posts</h1>
 
       {posts.map((post) => {
         return (
           <Link key={post.id} href={`/posts/${post.id}`}>
-            <h4>{post.title}</h4>
+            <h4 className={s.link}>{post.title}</h4>
           </Link>
         );
       })}
