@@ -1,8 +1,10 @@
+import Layout from "../components/layout";
+
 function HomePage() {
   return (
-    <div>
+    <Layout>
       <h1>Hello, NextJS!</h1>
-    </div>
+    </Layout>
   );
 }
 
